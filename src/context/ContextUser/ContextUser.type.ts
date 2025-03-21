@@ -1,12 +1,12 @@
 export namespace ContextUserTypes{
-    export type Props={
-        children:JSX.Element;
-    }
-
-    export type Context={
+    export type Props = {
+        children: JSX.Element;
+    };
+    
+    export type Context = {
         username: string;
         avatar: string;
-        onchangeUsername: (username:string) => void;
-        onchangeAvatar: (avatar:string) => void;
-    }
+        onChangeUsername: (username: string) => void;
+        onChangeAvatar: (avatar: string) => void;
+    };
 }

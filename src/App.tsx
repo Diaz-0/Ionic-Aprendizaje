@@ -1,4 +1,3 @@
-
 import { IonApp, setupIonicReact } from '@ionic/react';
 import {ProviderUser} from './context';
 import {AppNavigation} from "./components/navigation";
@@ -37,9 +36,11 @@ setupIonicReact();
 
 export default function App (){
   return(
-  <ProviderUser>
-    <AppNavigation />
-  </ProviderUser>
+  <IonApp>
+    <ProviderUser>
+      <AppNavigation />
+      </ProviderUser>
+  </IonApp>
   );
 };
 

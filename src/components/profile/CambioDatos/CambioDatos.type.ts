@@ -1,5 +1,5 @@
 export namespace CambioDatosType{
-  export type props={
-    onClose:()=>void;
-  }
-}
+  export type Props = {
+    onClose: () => void;
+  };
+} 

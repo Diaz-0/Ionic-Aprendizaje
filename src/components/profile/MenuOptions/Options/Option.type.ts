@@ -3,5 +3,5 @@ export namespace OptionType {
     icon: string;
     titulo: string;
     onClick: () => void;
-  }
+  };
 }
