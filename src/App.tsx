@@ -1,5 +1,5 @@
 import { IonApp, setupIonicReact } from '@ionic/react';
-import {ProviderUser} from './context';
+import {ProviderUser, ActividadesProvider} from './context';
 import {AppNavigation} from "./components/navigation";
 
 /* Core CSS required for Ionic components to work properly */
@@ -38,7 +38,9 @@ export default function App (){
   return(
   <IonApp>
     <ProviderUser>
+      <ActividadesProvider>
       <AppNavigation />
+      </ActividadesProvider>
       </ProviderUser>
   </IonApp>
   );

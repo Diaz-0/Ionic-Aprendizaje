@@ -1,3 +1,5 @@
+import {ActModel} from '../../models';
+
 export namespace ActividadContextType{
     export type Props={
         children:JSX.Element;
@@ -6,10 +8,11 @@ export namespace ActividadContextType{
     export type Context={
         totalAct:number;
         totalCompActi:number;
-        actividades:[];
-        completActi:[];
+        actividades:ActModel[];
+        completActi:ActModel[];
         abrirFormActi:()=>void;
-        crearActividad:()=>void;
+        crearActividad:(actividad:ActModel)=>void;
         checkCompleto:(id:string,check:boolean)=>void;
     };
 }
+
